@@ -8,7 +8,7 @@
 
 \subsection*{Problem 1:}
 
-The bounds for a \emph{biparte} graph is as follows:
+The bounds for a \emph{biparte} graph are as follows:
 
 - The lower bound is when the graph is extremely skewed to one side, where
 $n_i$ == 1 for either side of the biparte graph and $n_j = 200 - n_i $ is the remaining
@@ -21,7 +21,7 @@ n_j$. In this case,
 
 Thus,
 
-    \[ m = n_i == n_j == n_i \cdot n_j == 100 * 100 == 10,000 \]
+\[ m & = n_i \cdot n_j \mbox{, where } n_i == n_j \]
 
 \subsection*{Problem 2:}
 
@@ -31,8 +31,8 @@ $K_{p,q}$ is the product $p \cdot q$, where $p == 1$.  The upper bound is $((p
 
 \subsection*{Problem 3:}
 
-The set of value $k$ for which $G_k$ is controlled by the following
-conditions:
+The set of value $k$ for which $G_k$ is connected is controlled by the
+following conditions:
 
 - k where k is prime
 
@@ -41,10 +41,13 @@ conditions:
 - k where $10 \% k \neq 0$
 
 Since I'm not used to set theory, I am just listing the related subsets.
-There should be a relation among these subsets.
+There should be a relation among these subsets. I am suspecting the following:
+
+\[
+    \{k \mbox{ is prime}\} \cup (\{\|j-i\| == k\%10\} \cap \{10\%k \neq 0\})
+\]
 
 \subsection*{Problem 4:}
 
 
 \end{document}
-
