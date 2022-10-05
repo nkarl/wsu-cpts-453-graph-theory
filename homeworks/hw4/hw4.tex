@@ -1,7 +1,7 @@
 \documentclass[12pt,letterpaper]{article}
 \usepackage[parfill]{parskip}
-\usepackage{graphicx}
-\graphicspath{ {./images/} }
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -9,6 +9,21 @@
 \subsection*{Charles Nguyen, \#011606177 }
 
 \subsection*{Problem 1:}
+\subsubsection*{A.}
+Because $M$ is a simple graph, by definition the Cartesian product of $M$ with
+its own \emph{transpose} produces a square matrix of $m$ ($m \times m$) where
+$m$ is the number of vertices.  Each diagonal entry $i$ of this matrix denote
+a \emph{relation} of a vertex on itself. The \emph{relation} here is the
+number of edges incident on each vertex.
+
+\subsubsection*{B.}
+For every entry $(i, i)$ where $i$ is a unique vertex, there is a relation
+as shown in part A. Thus, for every entry $(i, j)$ where $i \neq j$, there is
+a relation between two unique vertices. In part A, we showed that each entry
+$(i, i)$ denotes the number of edges incident on some vertex $i$. Thus, here
+we see that $(i, j)$ shows the number of edges incident on the pair of
+vertices $(i, j)$.
+
 \subsubsection*{C.}
 Matrix $M$:
 \begin{flushright}
@@ -51,7 +66,7 @@ Matrix \emph{transposed} $M^T$:
 \end{tabular}
 \end{flushright}
 
-
+\pagebreak
 Matrix $M\cdot M^T$:
 \begin{flushright}
 \begin{tabular}{|*{6}{c|}}
@@ -69,9 +84,11 @@ Matrix $M\cdot M^T$:
       & 1 & 1 & 1 & 0 & 3\\
       \hline
 \end{tabular}
+\end{flushright}
 
 
 Matrix $D$:
+\begin{flushright}
 \begin{tabular}{|*{6}{c|}}
       \hline
       &   &   &   &   &  \\
@@ -108,5 +125,77 @@ Matrix $A$:
       \hline
 \end{tabular}
 \end{flushright}
+
+\subsection*{Problem 2:}
+\subsubsection*{A.}
+Given that the diameters have been found for $v_{10}$, similarly we have:
+
+\begin{flushleft}
+$\begin{aligned}
+    & v_5: d(v_{13}, v_5)=6\\
+    & v_6: d(v_{13}, v_6)=6\\
+    & v_7: d(v_{13}, v_7)=5\\
+    & v_8: d(v_{13}, v_8)=4\\
+    & v_9: d(v_5, v_9) = d(v_6, v_9) = d(v_(13), v_9)=3\\
+    & v_{14}: d(v_5, v_{14}) = d(v_6, v_{14}) = d(v_{13}, v_{14})=4\\
+    & v_{11}: d(v_5, v_{11}) = d(v_6, v_{11})=4\\
+    & v_{12}: d(v_5, v_{12}) = d(v_6, v_{12})=5\\
+    & v_{13}: d(v_5, v_{13}) = d(v_6, v_{13})=6
+\end{aligned}$
+\end{flushleft}
+
+\subsubsection*{B.}
+The \textbf{diameter} of $G_A$ is 3 and radius 3 for the same set of vertices.
+
+Because all eccentricities for any given vertex have the same value, the
+central vertices are: $v_9$ and $v_{10}$.
+
+\subsubsection*{C.}
+Similarly, the peripheral vertex is thus $v_9$ and $v_{10}$.
+
+I have no idea how to prove $u$ and $v$ are peripheral given $d(u, v) =
+diameter(G)$.
+
+\subsubsection*{D.}
+Proof by induction:
+
+For a graph $G$ with $V={\sum V_i}$. A path from $i=1$ to $i=2$ has length 1.
+Thus, a path from $i=1$ to $i=k$ has length $k-1$.
+Thus, a path from $i=1$ to $i=k+1$ has length $k$.
+
+Thus, by induction adjacent vertex of an eccentricity has length differs at
+most by 1.
+
+\subsubsection*{E.} For any connected graph, radius and diameter are pulled
+from the same set of eccentricities as defined by the problem statement, where
+diamiater is the upperbound of distance from two vertex $i$ and $j$, and
+radius is the lowerbound.
+
+\subsubsection*{F.}
+Proof by induction. Because diameter and radius are drawn from the same set of
+equidistant eccentricities, lowerbound and upperbound overlap. Thus, diameter
+of $H$ must also be less than twice the radius of $H$.
+
+\subsection*{Problem 3:}
+
+\subsubsection*{A.}
+Given that $G$ is simple, there is a path from $r$ to itself, thus this
+relation is \emph{reflexive}.
+
+\subsubsection*{B.}
+Because $G$ is simple and connected, for any adjacent $u, w \in V_G$, $e_{u,
+w}, e_{w, u} \in G$. Thus this relation is symmetric.
+
+\subsubsection*{C.}
+Because of (A) and (B), this relation is also transitive given that the
+equimagnitude holds for $d(r, u) = d(u, w)$.
+ 
+\subsubsection*{D.}
+The equivelence class of $r$, denoted $[r]$ is the set of all vertices on 
+which the relation $\approx$ can be applied.
+
+\subsubsection*{E.}
+$[u]$ is the class of all vertices connected to $r$ and are equdistant to one
+another.
 
 \end{document}
