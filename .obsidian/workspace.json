@@ -11,11 +11,26 @@
             "id": "1449852b827795d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf"
+              }
+            }
+          },
+          {
+            "id": "7aa80cc690580f02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assessment.Week11.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Assessment.Week11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Assessment.Week11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Assessment.Week11.md"
+              }
             }
           }
         ]
@@ -128,6 +147,8 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1449852b827795d6",
-  "lastOpenFiles": []
+  "active": "7aa80cc690580f02",
+  "lastOpenFiles": [
+    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf"
+  ]
 }
