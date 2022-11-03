@@ -1,6 +1,7 @@
 {
   "vimMode": true,
-  "spellcheck": true,
+  "showFrontmatter": false,
   "showLineNumber": true,
-  "showFrontmatter": true
+  "strictLineBreaks": false,
+  "showInlineTitle": true
 }

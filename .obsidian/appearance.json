@@ -1,3 +1,9 @@
 {
-  "theme": "system"
+  "cssTheme": "Blue Topaz",
+  "accentColor": "",
+  "theme": "moonstone",
+  "baseFontSize": 16,
+  "showViewHeader": true,
+  "nativeMenus": true,
+  "translucency": false
 }
