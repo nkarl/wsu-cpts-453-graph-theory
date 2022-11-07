@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assessment.Week11.md",
+                "file": "homeworks/week11/Assessment.Week11.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "82cdae56a692ff01",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Untitled Kanban.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assessment.Week11.md",
+                "file": "Untitled Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assessment.Week11.md",
+                "file": "Untitled Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assessment.Week11.md"
+                "file": "Untitled Kanban.md"
               }
             }
           }
@@ -136,9 +147,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7aa80cc690580f02",
+  "active": "82cdae56a692ff01",
   "lastOpenFiles": [
-    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
-    "Assessment.Week11.md"
+    "homeworks/week11/Assessment.Week11.md",
+    "Untitled Kanban.md",
+    "Untitled.md",
+    "homeworks/week11/Assessment.Week11.pdf",
+    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf"
   ]
 }
