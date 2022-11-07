@@ -5,6 +5,14 @@
 ### 1. Incidence Matrices
 ---
 A. Draw graphs from incidence matrix $G$ and $H$.
+
+$$
+M_G = 
+\begin{bmatrix}
+
+\end{bmatrix}
+$$
+
 B. Determine if they are isomorphic.
 
 
