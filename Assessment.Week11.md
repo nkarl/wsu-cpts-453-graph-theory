@@ -1,16 +1,23 @@
-6 questions.
+# CPTS 453 Graph Theory Assessment
+## Charles Nguyen 011606177
 
-## 1. Incidence Matrices
+
+### 1. Incidence Matrices
 ---
 A. Draw graphs from incidence matrix $G$ and $H$.
 B. Determine if they are isomorphic.
 
-## 2. Graph Complement
+
+### 2. Graph Complement
 ---
 
+
 ## 3.
+---
 1. Write incidence matrix and adjacency matrix G.
 2. Find the radius and diameter of G.
 3. 
 
+
 ## 4. 
+---
