@@ -52,6 +52,26 @@
                 "file": "homeworks/hw4/prompt.hw4.pdf"
               }
             }
+          },
+          {
+            "id": "b4294313f9db6d59",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "homeworks/hw4/hw4.pdf"
+              }
+            }
+          },
+          {
+            "id": "71f439c3a5d31729",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "homeworks/hw2/hw2.pdf"
+              }
+            }
           }
         ],
         "currentTab": 2
@@ -175,12 +195,14 @@
   "active": "ebc8f7edd919b70a",
   "lastOpenFiles": [
     "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
+    "homeworks/hw2/hw2.pdf",
     "homeworks/week11/Assessment.Week11.md",
-    "homeworks/week11/Assessment.Week11.pdf",
     "homeworks/week11/KanbanAssessment.md",
-    "homeworks/hw4/prompt.hw4.pdf",
-    "notes/week4/1.md",
     "homeworks/hw4/hw4.pdf",
-    "Untitled.md"
+    "homeworks/hw4/prompt.hw4.pdf",
+    "homeworks/hw3/hw3.pdf",
+    "homeworks/hw1/prompt.hw1.pdf",
+    "homeworks/hw3/prompt.hw3.pdf",
+    "homeworks/week11/Assessment.Week11.pdf"
   ]
 }

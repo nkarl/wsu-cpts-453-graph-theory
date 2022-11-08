@@ -99,6 +99,14 @@ graph TD
 B. Suppose $G$ is an $r$-regular simple graph of order $n$. Explain why $\overline{G}$ is an $s$-regular simple
 graph of order $n$ and determine the value of $s$ in terms of $r$.
 
+Given the complete graphs $G$ where $|V_G| = n$ and $\overline{G} = H$ where $|V_H|=m$, by definition of regularity the amount of edges in $G$ and $H$ are:
+
+$$
+\binom{n}{b} = \frac{n(n-1)}{2}; \quad \binom{m}{2} = \frac{m(m-1)}{2}
+$$
+
+Thus, $$.
+
 C. If $G = K_{p,q}$ where $p$ and $q$ are positive integers, describe $\overline{G}$.
 
 <div style="page-break-after: always"></div>
