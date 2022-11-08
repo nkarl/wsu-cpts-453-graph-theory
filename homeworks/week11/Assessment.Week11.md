@@ -65,12 +65,12 @@ B. The two graph $G$ and $H$ are not isomorphic because there is no bijection be
 A. Suppose $G$ is the six-cycle drawn below. Draw its complement $\overline{G}$.
 ```mermaid
 graph LR
-	a --- b
-	b --- c
-	c --- d
-	d --- e
-	e --- f
-	f --- a
+	a ---|1| b
+	b ---|2| c
+	c ---|3| d
+	d ---|4| e
+	e ---|5| f
+	f ---|6| a
 ```
 
 ```mermaid
@@ -100,12 +100,14 @@ B. Suppose $G$ is an $r$-regular simple graph of order $n$. Explain why $\overli
 graph of order $n$ and determine the value of $s$ in terms of $r$.
 
 Given the complete graphs $G$ where $|V_G| = n$ and $\overline{G} = H$ where $|V_H|=m$, by definition of regularity the amount of edges in $G$ and $H$ are:
-
 $$
-\binom{n}{b} = \frac{n(n-1)}{2}; \quad \binom{m}{2} = \frac{m(m-1)}{2}
+|E_G| = \frac{n\cdot r}{2} = 6; \quad |E_H| = \frac{m\cdot s}{2} = 18
 $$
 
-Thus, $$.
+Thus,
+$$
+r = 2; \quad s = 6
+$$
 
 C. If $G = K_{p,q}$ where $p$ and $q$ are positive integers, describe $\overline{G}$.
 
