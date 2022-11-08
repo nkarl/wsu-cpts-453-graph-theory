@@ -228,17 +228,30 @@ A trivial circuit of a graph is a circuit containing only one vertex. Thus, a no
 ---
 Let $T$ be a full ternary (3-ary) tree of height 7.
 
+A. Determine, with justification, a tight upper bound on the number of vertices $T$ can have.
+
 A full $m$-ary tree of height $h$ has at most:
 $$
 \begin{aligned}
-&\sum_{i=0}^h m^i
-\quad\mbox{for}\quad \{m=3, h=7\} \quad |V|_{max} = 
+&\sum_{i=0}^{h-1} m^i
+\quad\mbox{for}\quad \{m=3, h=7\} \quad |V|_{max} = 1093
 \end{aligned}
 $$
-
-A. Determine, with justification, a tight upper bound on the number of vertices $T$ can have.
 B. Determine, with justification, a tight upper bound on the number of edges $T$ can have.
+
+A maximal tree (maximum number of vertices $n$) should have $n - 1$ edges. Thus,
+$$
+|E|_{max} = 1092
+$$
+
 C. Determine, with justification, a tight upper bound on the number of leaves $T$ can have.
+
+A full $m$-ary tree of height $h$ has at most:
+
+$$
+|L|_{max} = m^{(h-1)} = 729
+$$
+
 D. Determine, with justification, whether it is possible for $T$ to have exactly 100 leaves.
 
 <div style="page-break-after: always"></div>
