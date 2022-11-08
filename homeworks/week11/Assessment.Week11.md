@@ -216,3 +216,4 @@ D. Determine, with justification, whether it is possible for $T$ to have exactly
 A. Determine, in terms of $q$ and $r$, the number of vertices in $S_{q,r}$
 B. Determine, in terms of $q$ and $r$, the number of edges in $S_{q,r}$
 C. Show that $r$ is even if and only if $S_{q,r}$ is bipartite.
+
