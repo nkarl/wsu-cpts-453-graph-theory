@@ -30,7 +30,7 @@ $$
 
 Their graphs:
 ```mermaid
-graph TD
+graph LR
 	title[<b>G</b>]
 	a ---|1| b
 	a ---|2| c
@@ -43,7 +43,7 @@ graph TD
 ```
 
 ```mermaid
-graph TD
+graph LR
 	title[<b>H</b>]
 	a ---|1| b
 	a ---|2| c
@@ -99,13 +99,11 @@ graph TD
 B. Suppose $G$ is an $r$-regular simple graph of order $n$. Explain why $\overline{G}$ is an $s$-regular simple
 graph of order $n$ and determine the value of $s$ in terms of $r$.
 
-
 C. If $G = K_{p,q}$ where $p$ and $q$ are positive integers, describe $\overline{G}$.
-
 
 <div style="page-break-after: always"></div>
 
-#### 3. 
+#### 3. Adjacency Matrix & Eccentricities
 ---
 Given $G$:
 ```mermaid
@@ -176,22 +174,21 @@ D =
 ;
 A =
 \begin{bmatrix}
- &1&1&1&1& & \\
-1& &1& & &1& \\
-1&1& & & &1& \\
-1& & & &1& &1\\
-1& & &1& & &1\\
- &1&1& & & &1\\
- & & &1&1&1& \\
+ &1&1&1&1&0&0\\
+1& &1&0&0&1&0\\
+1&1& &0&0&1&0\\
+1&0&0& &1&0&1\\
+1&0&0&1& &0&1\\
+0&1&1&0&0& &1\\
+0&0&0&1&1&1& \\
 \end{bmatrix}
 $$
 
 
-B. G has diameter 4 and radius 2.
+B. G has diameter 6 (max eccentricity, between 1 and 2: 1-4-5-7-6-3-2) and radius 4 (min eccentricity, between 1 and 7: 1-2-3-6-7).
 
 
-C. This is the graph from question 3 in homework 6. Explain why ($x − k)$ is a factor of its chromatic polynomial for every $k \in \{0,1,2,3\}$. You are not required to find the chromatic polynomial of $G$. 
-
+C. This is the graph from question 3 in homework 6. Explain why ($x − k)$ is a factor of its chromatic polynomial for every $k \in \{0,1,2,3\}$. You are not required to find the chromatic polynomial of $G$.
 
 <div style="page-break-after: always"></div>
 
@@ -199,6 +196,7 @@ C. This is the graph from question 3 in homework 6. Explain why ($x − k)$ is a
 ---
 Recall that a **circuit** is a closed walk (one in which the starting and ending vertices are the same) that does not repeat an edge. Explain why if $G$ has a nontrivial circuit, then it must have a nontrivial cycle.
 
+A trivial circuit of a graph is a circuit containing only one vertex. Thus, a nontrivial circuit is any circuit that is *not* that. This means a nontrivial circuit has $|V| > 1$. Because a circuit is a closed walk, it is also a cycle.
 
 <div style="page-break-after: always"></div>
 
@@ -210,7 +208,6 @@ A. Determine, with justification, a tight upper bound on the number of vertices 
 B. Determine, with justification, a tight upper bound on the number of edges $T$ can have.
 C. Determine, with justification, a tight upper bound on the number of leaves $T$ can have.
 D. Determine, with justification, whether it is possible for $T$ to have exactly 100 leaves.
-
 
 <div style="page-break-after: always"></div>
 
