@@ -55,8 +55,8 @@ graph LR
 	c ---|8| e
 ```
 
-B. The two graph $G$ and $H$ are not isomorphic because there is no bijection between the vertex set of $G$ and vertex set of $H$. Counter evident is the number of edges incident on $G.d = 3$ while $H.d = 2$.
 
+B. The two graph $G$ and $H$ are not isomorphic because there is no bijection between the vertex set of $G$ and vertex set of $H$. Counter evident is the number of edges incident on $G.d = 3$ while $H.d = 2$.
 
 <div style="page-break-after: always"></div>
 
@@ -82,34 +82,48 @@ graph TD
 	b ---|4| d
 	b ---|5| e
 	b ---|6| f
-	c ---|7| a
-	c ---|8| e
-	c ---|9| f
-	d ---|10| a
-	d ---|11| b
-	d ---|12| f
-	e ---|13| a
-	e ---|14| b
-	e ---|15| c
-	f ---|16| b
-	f ---|17| c
-	f ---|18| d
+	c ---|7| e
+	c ---|8| f
+	d ---|9| f
 ```
+
 
 B. Suppose $G$ is an $r$-regular simple graph of order $n$. Explain why $\overline{G}$ is an $s$-regular simple
 graph of order $n$ and determine the value of $s$ in terms of $r$.
 
-Given the complete graphs $G$ where $|V_G| = n$ and $\overline{G} = H$ where $|V_H|=m$, by definition of regularity the amount of edges in $G$ and $H$ are:
+Given the simple graphs $G$ where $|V_G| = n$ and $\overline{G} = H$ where $|V_H|=n$, by definition of regularity the amount of edges in $G$ and $H$ are:
 $$
-|E_G| = \frac{n\cdot r}{2} = 6; \quad |E_H| = \frac{m\cdot s}{2} = 18
+|E_G| = \frac{n\cdot r}{2} = 6; \quad |E_H| = \frac{n\cdot s}{2} = 9
 $$
 
 Thus,
 $$
-r = 2; \quad s = 6
+r = 2; \quad s = 3
 $$
 
+We know that for a complete $k$-regular graph of $x$ vertices, the maximal amount of edges allowed is given by:
+$$
+\begin{aligned}
+&|E|_{max}=\binom{x}{2} = \frac{x\cdot(x-1)}{2} \cr\cr
+&\mbox{for } x = 6\quad\mbox{ then }|E|_{max}= 15
+\end{aligned}
+$$
+
+We also know that for such maximal $k$-regular graph:
+$$
+n=k+1 \quad\mbox{therefore}\quad k=6-1=5
+$$
+Thus, because $G$ and $H$ share the same set of vertices, both graphs are distinct subgraphs of the maximal $k$-regular graph where $k=5$.
+
+$$
+|E|_{max} = \frac{x\cdot k}{2} = \frac{x\cdot (r+s)}{2} = \frac{x\cdot r}{2} +\frac{x\cdot s}{2}
+$$
+Thus, $\overline{G}$ is $s$-regular.
+
+
 C. If $G = K_{p,q}$ where $p$ and $q$ are positive integers, describe $\overline{G}$.
+
+
 
 <div style="page-break-after: always"></div>
 
