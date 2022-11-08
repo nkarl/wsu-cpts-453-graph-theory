@@ -228,6 +228,8 @@ A trivial circuit of a graph is a circuit containing only one vertex. Thus, a no
 ---
 Let $T$ be a full ternary (3-ary) tree of height 7.
 
+A full $k$-ary tree with $n$ vertices
+
 A. Determine, with justification, a tight upper bound on the number of vertices $T$ can have.
 B. Determine, with justification, a tight upper bound on the number of edges $T$ can have.
 C. Determine, with justification, a tight upper bound on the number of leaves $T$ can have.
