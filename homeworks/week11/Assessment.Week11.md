@@ -113,7 +113,7 @@ We also know that for such maximal $k$-regular graph:
 $$
 n=k+1 \quad\mbox{therefore}\quad k=6-1=5
 $$
-Thus, because $G$ and $H$ share the same set of vertices, both graphs are distinct subgraphs of the maximal $k$-regular graph where $k=5$.
+Thus, because $G$ and $H$ share the same set of vertices, both graphs are totally disconnected from each other and are subgraphs of the maximal $k$-regular graph where $k=5$.
 
 $$
 |E|_{max} = \frac{x\cdot k}{2} = \frac{x\cdot (r+s)}{2} = \frac{x\cdot r}{2} +\frac{x\cdot s}{2}
