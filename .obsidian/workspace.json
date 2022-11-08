@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,7 +194,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1597e6d3efdf4e32",
+  "active": "ebc8f7edd919b70a",
   "lastOpenFiles": [
     "homeworks/week11/KanbanAssessment.md",
     "homeworks/week11/Assessment.Week11.md",

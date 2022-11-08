@@ -123,7 +123,7 @@ Thus, $\overline{G}$ is $s$-regular.
 
 C. If $G = K_{p,q}$ where $p$ and $q$ are positive integers, describe $\overline{G}$.
 
-$G$ is a bipartite graph, but $\overline{G}$ is not guaranteed to be a bipartite graph.
+$G$ is a bipartite graph, but $\overline{G}$ is not guaranteed to be a bipartite graph. There is also not enough information about $p$ and $q$ about their complete boundaries in order to describe G's complement.
 
 <div style="page-break-after: always"></div>
 
