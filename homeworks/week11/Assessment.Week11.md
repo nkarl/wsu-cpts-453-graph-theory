@@ -228,7 +228,13 @@ A trivial circuit of a graph is a circuit containing only one vertex. Thus, a no
 ---
 Let $T$ be a full ternary (3-ary) tree of height 7.
 
-A full $k$-ary tree with $n$ vertices
+A full $m$-ary tree of height $h$ has at most:
+$$
+\begin{aligned}
+&\sum_{i=0}^h m^i
+\quad\mbox{for}\quad \{m=3, h=7\} \quad |V|_{max} = 
+\end{aligned}
+$$
 
 A. Determine, with justification, a tight upper bound on the number of vertices $T$ can have.
 B. Determine, with justification, a tight upper bound on the number of edges $T$ can have.
