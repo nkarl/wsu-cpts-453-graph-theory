@@ -32,13 +32,15 @@
           {
             "id": "ebc8f7edd919b70a",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "homeworks/week11/Assessment.Week11.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
