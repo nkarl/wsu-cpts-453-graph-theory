@@ -4,33 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "fc27fd68900709ea",
+        "id": "5317276df53673c4",
         "type": "tabs",
         "children": [
           {
-            "id": "da711b1df94d5162",
+            "id": "d019b0d7ac90c55c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "homeworks/week10/Graph Theory 2022 Assignment 6.pdf"
-              }
-            }
-          },
-          {
-            "id": "a593e96fdbe4c955",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homeworks/week10/HW6.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,32 +114,22 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "f20579d0f8cb1bc1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "homeworks/week10/HW6.md"
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "a593e96fdbe4c955",
+  "active": "b101114cecdc2c4f",
   "lastOpenFiles": [
     "homeworks/week10/Graph Theory 2022 Assignment 6.pdf",
     "homeworks/week10/HW6.md",
     "homeworks/week11/Assessment.Week11.md",
+    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
     "homeworks/week11/CPTS453_ASSESSMENT_NGUYEN_CHARLES.pdf",
     "homeworks/week11/KanbanAssessment.md",
-    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
     "homeworks/hw4/prompt.hw4.pdf",
     "Untitled Kanban.md",
     "homeworks/hw4/hw4.pdf",

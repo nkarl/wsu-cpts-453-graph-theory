@@ -19,22 +19,69 @@ $$
 \Theta(H) = \lceil log_2(N)\rceil
 $$
 
-C. Tight lowerbound for rooted binary trees with $N$ nodes.
+C. Tight lowerbound for $H$ for rooted binary trees with $N$ leaves is also:
+$$
+\Omega(H) = \lceil log_2(N)\rceil
+$$
 
-D. Tight upperbound for $n$-ary rooted binary trees with $N$ nodes.
+D. Tight upperbound for $H$ for $n$-ary rooted binary trees with $N$ leaves. Assuming that the tree is nontrivial like in (A),  for $n=N$, all $N$ leaves are connected to a single root node. Thus, the tight lowerbound is the height of $n$-ary tree is:
+$$
+\Omega(H) = 1.
+$$
 
 <div style="page-break-after:always"></div>
 
 #### 2. Tree Shape
 ---
+>[!warning] Rules
+> - Binary root tree $(T, r)$
+> - each tree's vertex is a finite string over $\{0, 1\}$, i.e. some binary number
+> - root is $v_0$
+> - if $v_i$ ends at 0, then left-child is $v_0$ and right-child is $v_1$.
+> - if $v_i$ ends at 1, then the only child is $v_0$.
 
+A. Draw levels 0 through 4of this tree, with the vertices labeled properly.
+
+```mermaid
+graph TD
+	0 --- 1[v0=1]
+	0 --- 10[v1=10]
+	10 --- 11[v0=11]
+	10 --- 100[v1=100]
+	100 --- 101[v0=101]
+	100 --- 110[v1=110]
+	110 --- 111[v0=111]
+	110 --- 1000[v1=1000]
+```
+
+B. Make a conjecture of how to compute  the number of vertices at a given level.
+
+Because this tree is amputated on exactly one branch for every level, the number of vertices in the tree can be calculated as:
+$$
+V = 2l+1, \quad\mbox{where } l=\mbox{levels}
+$$
 
 <div style="page-break-after:always"></div>
 
-#### 3. Chromatic Polynomal, Not 3-Colorable
+#### 3. k-Colorable
 ---
+Where k=3 for the given graph,
+```mermaid
+graph LR
+	1 ---|0001| 2
+	1 ---|0010| 3
+	1 ---|0011| 4
+	1 ---|0100| 5
+	2 ---|0101| 3
+	2 ---|0110| 6
+	3 ---|0111| 6
+	4 ---|1000| 5
+	4 ---|1001| 7
+	5 ---|1010| 7
+	6 ---|1011| 7
+```
 
-
+The graph contains cycles so no $k$-coloring can exists for $k$. Thus, it's not 3-colorable.
 <div style="page-break-after:always"></div>
 
 #### 4. Chromatic Polynomial
