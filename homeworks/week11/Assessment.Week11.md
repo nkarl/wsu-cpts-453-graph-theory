@@ -95,30 +95,28 @@ graph of order $n$ and determine the value of $s$ in terms of $r$.
 > $$
 > |E_G| = \frac{n\cdot r}{2} = 6; \quad |E_H| = \frac{n\cdot s}{2} = 9
 > $$
-> 
-> Thus,
 > $$
 > r = 2; \quad s = 3
 > $$
-> 
-> We know that for a complete $k$-regular graph of $x$ vertices, the maximal amount of edges allowed is given by:
+> We know that for a complete $k$-regular graph of $n$ vertices, the maximal amount of edges allowed is given by:
 > $$
 > \begin{aligned}
-> &|E|_{max}=\binom{x}{2} = \frac{x\cdot(x-1)}{2} \cr\cr
-> &\mbox{for } x = 6\quad\mbox{ then }|E|_{max}= 15
+> &|E|_{max}=\binom{n}{2} = \frac{n\cdot(n-1)}{2} \cr\cr
+> &\mbox{for } n = 6\quad\mbox{ then }|E|_{max}= 15
 > \end{aligned}
 > $$
 > 
 > We also know that for such maximal $k$-regular graph:
 > $$
-> n=k+1 \quad\mbox{therefore}\quad k=6-1=5
+> n=k+1
 > $$
-> Thus, because $G$ and $H$ share the same set of vertices, both graphs are totally disconnected from each other and are subgraphs of the maximal $k$-regular graph where $k=5$.
-> 
+> Thus, because $G$ and $H$ share the same set of vertices, both graphs are totally disconnected (from each other) subgraphs of the maximal $k$-regular graph.
 > $$
-> |E|_{max} = \frac{x\cdot k}{2} = \frac{x\cdot (r+s)}{2} = \frac{x\cdot r}{2} +\frac{x\cdot s}{2}
+> |E|_{max} = \frac{n\cdot k}{2} = \frac{n\cdot (r+s)}{2} = \frac{n\cdot r}{2} +\frac{n\cdot s}{2}
 > $$
-> Thus, $\overline{G}$ is $s$-regular, and $s = k-r$.
+> In order for the $k$-regular graph to be regular, its disconnected components has to be recursively regular:
+> $$\mbox{$k$-regular graph} = G \cup H$$
+> Thus, $\overline{G}=H$ is $s$-regular, and $s = n-1-r$.
 
 C. If $G = K_{p,q}$ where $p$ and $q$ are positive integers, describe $\overline{G}$.
 > [!solution]
@@ -220,7 +218,7 @@ C. This is the graph from question 3 in homework 6. Explain why ($x − k)$ is a
 ---
 Recall that a **circuit** is a closed walk (one in which the starting and ending vertices are the same) that does not repeat an edge. Explain why if $G$ has a nontrivial circuit, then it must have a nontrivial cycle.
 > [!solution]
-> A trivial circuit of a graph is a circuit containing only one vertex. Thus, a nontrivial circuit is any circuit that is *not* that. This means a nontrivial circuit has $|V| > 1$. Because a circuit is a closed walk, it is also a cycle.
+> A trivial circuit of a graph is a circuit containing only one vertex. Thus, a nontrivial circuit is any circuit that is *not* that. This means a nontrivial circuit has $|V| > 1$. Because a nontrivial circuit is a closed walk, it must have $|V| > 2$. Thus, it also contains at least  a nontrivial cycle.
 
 <div style="page-break-after: always"></div>
 
