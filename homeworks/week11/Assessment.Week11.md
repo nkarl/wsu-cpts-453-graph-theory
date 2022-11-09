@@ -254,6 +254,8 @@ $$
 
 D. Determine, with justification, whether it is possible for $T$ to have exactly 100 leaves.
 
+Because T is a **full** ternary tree, that means that every internal node must have exactly 3 child nodes. This means that:
+$$|L| \not\equiv 100 \mod 3$$
 <div style="page-break-after: always"></div>
 
 #### 6.
