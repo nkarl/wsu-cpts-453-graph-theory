@@ -3,11 +3,11 @@
 
 #### 1. Tree Tight Bounds
 ---
-Non-parent vertices are leaf nodes. Thus the tree has $N=10^{12}$ leaves.
+Non-parent vertices are leaf nodes. Thus the tree has $N=10^{12}$ leaves. This tree has height $H$.
 
-A. Tight lower bound
+A. $\Omega(H)=1$ for $10^{12}$-ary tree.
 
-B. Tight upper bound
+B. $\Theta(H) = 10^{12}$ for singulary tree.
 
 C. Tight lowerbound for rooted binary trees with $N$ nodes.
 
