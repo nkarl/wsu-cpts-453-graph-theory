@@ -260,7 +260,26 @@ $$|L| \not\equiv 100 \mod 3$$
 
 #### 6.
 ---
+Given the cylinder graph $S$ defined as:
+$$
+S_{q,r} = P_q\times C_r
+$$
+
 A. Determine, in terms of $q$ and $r$, the number of vertices in $S_{q,r}$
+
+The number of vertices in $S$ is:
+$$
+|V_S| = |P_q\times C_r| = |P_q|\cdot|C_r|=q\cdot r
+$$
+
 B. Determine, in terms of $q$ and $r$, the number of edges in $S_{q,r}$
+
+A *path graph* $P_q$ has size of $(q-1)$ edges. A *cycle graph* $C_r$ has size of $r$ edges. Therefore,
+
+$$
+|E_S| = q\cdot(q-1) + r\cdot r
+$$
+
 C. Show that $r$ is even if and only if $S_{q,r}$ is bipartite.
+
 
