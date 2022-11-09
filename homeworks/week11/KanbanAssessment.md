@@ -7,7 +7,7 @@ kanban-plugin: basic
 ## Assessment
 
 - [ ] - [ ] 3<br>	- [x] A<br>	- [x] B<br>	- [ ] C
-- [ ] - [ ] 6<br>	- [ ] A<br>	- [ ] B<br>	- [ ] C
+- [ ] - [ ] 6<br>	- [x] A<br>	- [x] B<br>	- [ ] C
 
 
 ## DONE
