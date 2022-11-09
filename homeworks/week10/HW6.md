@@ -5,9 +5,19 @@
 ---
 Non-parent vertices are leaf nodes. Thus the tree has $N=10^{12}$ leaves. This tree has height $H$.
 
-A. $\Omega(H)=1$ for $10^{12}$-ary tree.
+Given some $m$-ary tree, where $m\in\mathbb{N^+}$.
 
-B. $\Theta(H) = 10^{12}$ for singulary tree.
+A. Tight lowerbound $\Omega(H)=0$ for any $0$-ary trees. This is an ensemble of totally disconnected nodes.
+
+B. $H$ is maximal for 1-ary tree, however the tight upperbound must also obey the condition that the trees has $N=10^{12}$ leaves. Since any 1-ary trees have only a single leaf node, we choose $m = 2$ for binary trees. Thus, the upperbound for $H$ is the height of complete binary trees of $N$ leaves:
+$$
+	\theta(H) = \lceil log_2(N+V)\rceil, \mbox{where V are missing leaves of the full tree.}
+$$
+
+Then, the tight upperbound of $H$ is:
+$$
+\Theta(H) = \lceil log_2(N)\rceil
+$$
 
 C. Tight lowerbound for rooted binary trees with $N$ nodes.
 
