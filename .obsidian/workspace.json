@@ -10,18 +10,6 @@
           {
             "id": "79a20db297d461b3",
             "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "homeworks/week11/KanbanAssessment.md"
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "1597e6d3efdf4e32",
-            "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
@@ -32,15 +20,13 @@
           {
             "id": "ebc8f7edd919b70a",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "homeworks/week11/Assessment.Week11.md",
                 "mode": "source",
                 "source": false
-              },
-              "pinned": true
+              }
             }
           },
           {
@@ -52,28 +38,9 @@
                 "file": "homeworks/hw4/prompt.hw4.pdf"
               }
             }
-          },
-          {
-            "id": "b4294313f9db6d59",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "homeworks/hw4/hw4.pdf"
-              }
-            }
-          },
-          {
-            "id": "71f439c3a5d31729",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "homeworks/hw4/hw4.pdf"
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -139,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homeworks/week11/KanbanAssessment.md",
+                "file": "homeworks/week11/Assessment.Week11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homeworks/week11/KanbanAssessment.md",
+                "file": "homeworks/week11/Assessment.Week11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homeworks/week11/KanbanAssessment.md"
+                "file": "homeworks/week11/Assessment.Week11.md"
               }
             }
           }
@@ -188,20 +155,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "79a20db297d461b3",
+  "active": "ebc8f7edd919b70a",
   "lastOpenFiles": [
-    "homeworks/hw4/hw4.pdf",
-    "homeworks/hw2/hw2.pdf",
-    "homeworks/hw1/prompt.hw1.pdf",
-    "homeworks/hw3/hw3.pdf",
+    "Untitled Kanban.md",
     "homeworks/week11/Assessment.Week11.md",
-    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
     "homeworks/hw4/prompt.hw4.pdf",
-    "homeworks/week11/KanbanAssessment.md",
+    "homeworks/hw4/hw4.pdf",
+    "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
     "homeworks/week11/Assessment.Week11.pdf",
-    "homeworks/hw3/prompt.hw3.pdf"
+    "Untitled.md"
   ]
 }
