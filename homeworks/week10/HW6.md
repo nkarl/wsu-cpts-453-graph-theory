@@ -3,7 +3,15 @@
 
 #### 1. Tree Tight Bounds
 ---
+Non-parent vertices are leaf nodes. Thus the tree has $N=10^{12}$ leaves.
 
+A. Tight lower bound
+
+B. Tight upper bound
+
+C. Tight lowerbound for rooted binary trees with $N$ nodes.
+
+D. Tight upperbound for $n$-ary rooted binary trees with $N$ nodes.
 
 <div style="page-break-after:always"></div>
 
