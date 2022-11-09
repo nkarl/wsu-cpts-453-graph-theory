@@ -1,7 +1,5 @@
-# CPTS 453 Graph Theory -- Assessment
-
-## Charles Nguyen -- 011606177
-
+# CPTS 453 Graph Theory Week 11 Assessment
+## Charles Nguyen, 011606177
 
 #### 1. Incidence Matrices
 ---
@@ -212,6 +210,54 @@ B.
 
 C. This is the graph from question 3 in homework 6. Explain why ($x − k)$ is a factor of its chromatic polynomial for every $k \in \{0,1,2,3\}$. You are not required to find the chromatic polynomial of $G$.
 
+Given the graph, we call it $X$:
+```mermaid
+graph LR
+1 --- 2
+2 --- 3
+3 --- 4
+4 --- 1
+2 --- 5
+5 --- 3
+```
+> [!solution]
+> 
+> This graph is the disjoint union $X = G\sqcup H$ of the following two graphs:
+> ```mermaid
+> graph LR
+> 	title[<b>G</b>]
+> 	1 --- 2
+> 	2 --- 3
+> 	3 --- 4
+> 	4 --- 1
+> ```
+> 
+> ```mermaid
+> graph LR
+> 	title[<b>H</b>]
+> 	2 --- 3
+> 	2 --- 5
+> 	5 --- 3
+> ```
+> 
+> where $G$ is a $2$-regular graph of order 4 ($K_4$), and $H$ is a $2$-regular graph of order 3 ($K_3$).
+> 
+> We then have,
+> $$
+> p_{G\sqcup H}(k) = p_G(k)\cdot p_H(k)
+> $$
+> where,
+> $$
+> p(k) =\cases{\frac{k!}{(k-n)!} & $\quad k \geq n$ (1) \cr
+> 			0 & $\quad k < n$ (2)}
+> $$
+> 
+> Beacuse $(k=3) < (n_G=4)$ and $(k=3)\geq (n_H=3)$, we have,
+> $$
+> p_{G\sqcup H}(k) = 0\cdot p_H(k)
+> $$
+> It is required that a graph's $p(k) \neq 0$ in order for that graph to be $k$-colorable. Thus, this graph is not $k$-colorable, and for every $k \in \{0, 1, 2, 3\}$, any $(x-k)$ can be a factor of its chromatic polynomial.
+
 <div style="page-break-after: always"></div>
 
 #### 4. Circuitry
@@ -255,6 +301,7 @@ D. Determine, with justification, whether it is possible for $T$ to have exactly
 > [!solution]
 > Because T is a **full** ternary tree, that means that every internal node must have exactly 3 child nodes. This means that:
 > $$|L| \not\equiv 100 \mod 3$$
+
 <div style="page-break-after: always"></div>
 
 #### 6. Cartesian Product
@@ -280,3 +327,17 @@ B. Determine, in terms of $q$ and $r$, the number of edges in $S_{q,r}$
 > $$
 
 C. Show that $r$ is even if and only if $S_{q,r}$ is bipartite.
+> [!solution]
+> We assume that the subgraph $C_r$ is an odd cycle, i.e. $(r\mod 2\neq 0)$:
+> $$C_{2r+1}: v_0,e_1, e_1,\dots,v_{2n}, e_{2n+1}, (v_{2n+1}=v_0)$$
+> If this was a bipartite graph, we could partition it into two parts $V_0$ and $V_1$ such that every edge incident on one vertex in $V_0$ and one vertex in $V_1$. 
+> 
+> We assume that $v_0 \in V_0$. This means that we choose the even vertices to be in $V_0$ and odd vertices to be in $V_1$ as follows:
+> $$v_{2k} \in V_0; \quad v_{2k+1} \in V_1 \quad \forall k, 0\leq k\leq n$$
+> Thus, $e_1=v_0v_1$ means $v_1 \in V_1$.
+> 
+> By induction,
+> $$e_{2k}\in V_0; \quad e_{2k+1}\in V_1$$
+> $$e_{2n}\in V_0; \quad e_{2n+1}\in V_1\quad (1)$$
+> 
+> (1) is a contradiction because the original assumption is that $v_{2n+1}=v_0$ meaning $v_{2n+1}\in V_0$. Therefore, we have proven that $C_r$ cannot be an odd cycle. In other words, $C_r$ must be an even cycle and as a result $r$ is even.
