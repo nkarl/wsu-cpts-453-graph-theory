@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Graph HyperNetworks for Neural Architecture Search.md"
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "ba5dbc3e2b2a13de",
   "lastOpenFiles": [
+    "homeworks/Course Paper/Research/hypernetworks.pdf",
+    "homeworks/Course Paper/Research/graph_hypernetworks_for_neural.pdf",
+    "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
     "homeworks/week11/Assessment.Week11.md",
     "homeworks/week10/HW6.md",
     "homeworks/week10/HW6.pdf",
     "homeworks/week10/Graph Theory 2022 Assignment 6.pdf",
     "homeworks/week9/Graph Theory 2022 Assignment 5.pdf",
     "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
-    "homeworks/week11/CPTS453_ASSESSMENT_NGUYEN_CHARLES.pdf",
-    "homeworks/week11/KanbanAssessment.md",
-    "homeworks/hw4/prompt.hw4.pdf",
-    "Untitled Kanban.md"
+    "homeworks/week11/CPTS453_ASSESSMENT_NGUYEN_CHARLES.pdf"
   ]
 }

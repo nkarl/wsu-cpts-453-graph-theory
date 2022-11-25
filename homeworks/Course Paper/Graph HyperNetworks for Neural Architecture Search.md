@@ -4,3 +4,8 @@
 
 - GHN can be generalized and applied to *anytime-prediction*, and outperform existing manually designed models.
 
+### Prerequisite
+##### Graph Neural Networks (GNN)
+
+##### HyperNetworks (HN)
+A neural network that generates the parameters of another network.
