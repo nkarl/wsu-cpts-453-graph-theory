@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5317276df53673c4",
+        "id": "e72d50d762911105",
         "type": "tabs",
         "children": [
           {
-            "id": "d019b0d7ac90c55c",
+            "id": "ba5dbc3e2b2a13de",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homeworks/week11/Assessment.Week11.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homeworks/week11/Assessment.Week11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homeworks/week11/Assessment.Week11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "homeworks/week11/Assessment.Week11.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -136,13 +128,13 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "d019b0d7ac90c55c",
+  "active": "ba5dbc3e2b2a13de",
   "lastOpenFiles": [
+    "homeworks/week11/Assessment.Week11.md",
     "homeworks/week10/HW6.md",
     "homeworks/week10/HW6.pdf",
     "homeworks/week10/Graph Theory 2022 Assignment 6.pdf",
     "homeworks/week9/Graph Theory 2022 Assignment 5.pdf",
-    "homeworks/week11/Assessment.Week11.md",
     "homeworks/week11/Graph Theory 2022 Week 11 Assessment.pdf",
     "homeworks/week11/CPTS453_ASSESSMENT_NGUYEN_CHARLES.pdf",
     "homeworks/week11/KanbanAssessment.md",
