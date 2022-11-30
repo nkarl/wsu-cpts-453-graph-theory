@@ -16,4 +16,22 @@
 - [Understanding Convolutions on Graphs](https://distill.pub/2021/understanding-gnns/)
 
 ##### HyperNetworks (HN)
-A neural network that generates the parameters of another network.
+A neural network that generates the parameters of another network. A HN is an abstraction, similar to a phenotype is parametrized by a genotype.
+
+The focus of the *Google paper* is to show that HN is a useful for deep CNN and long RNN as a relaxed form of weight-sharing across layers.
+
+HN can generate non-shared weights for LSTM.
+
+They use a small network to generate weights for a larger network (main net).
+
+> [!info] Review
+> - A Main Net: maps some raw inputs to their desired target
+> - HyperNet: takes a set of inputs that contain information about the structure of the weights and generates the weight for that layer.
+
+
+
+## PAPER
+---
+- [ ] Plan out the structure of the paper
+	- [ ] Narrative paper
+	- [ ] Limit: 5 pages
