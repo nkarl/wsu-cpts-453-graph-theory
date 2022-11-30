@@ -37,8 +37,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md"
+              }
             }
           }
         ],
@@ -151,7 +154,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cada6bd9e6ab50c9",
+  "active": "ba5dbc3e2b2a13de",
   "lastOpenFiles": [
     "homeworks/week9/Graph Theory 2022 Assignment 5.pdf",
     "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
