@@ -1,6 +1,9 @@
+# CPTS 453 | HW5
+## CHARLES NGUYEN, 011606177
+
 ## 1.
----
 Give details – two paragraphs will suffice – about your choice for the end-of-semester project.
+<hr>
 
 *I am researching the application of graph theory in neural network models.* I am planning to put together some kind of relationship between the following topics:
 
@@ -11,9 +14,11 @@ Give details – two paragraphs will suffice – about your choice for the end-o
 
 In recent years neural network modeling has become increasingly the go-to choice for solving high-dimensional problems which are highly computationally complex. Being able to relate graph theory and neural network is a very important to me in order to begin tackling these problems.
 
-## 2.
----
-In the current era, *media beyond written sources* have been effective in communicating complex mathematical ideas to a broad audience. Shining examples of this include YouTube videos such as the 3Blue1Brown videos produced by Grant Sanderson. **Find and provide a short synopsis of two YouTube videos each effectively explaining a problem that involves graph theory**. A “short synopsis” includes ***the URL along with at least two paragraphs*** of explanation and/or narrative.
+<div style="page-break-after:always"></div>
+
+### 2.
+In the current era, *media beyond written sources* have been effective in communicating complex mathematical ideas to a broad audience. Shining examples of this include YouTube videos such as the 3Blue1Brown videos produced by Grant Sanderson. **Find and provide a short synopsis of two YouTube videos each effectively explaining a problem that involves graph theory**. A “short synopsis” includes *the URL along with at least two paragraphs* of explanation and/or narrative.
+<hr>
 
 > [!link] [Markov Chain for Stochastic Decision Making](https://www.youtube.com/watch?v=i3AkTO9HLXo)
 > 
@@ -39,7 +44,9 @@ In the current era, *media beyond written sources* have been effective in commun
 > $$
 > \pi\cdot A = \pi
 > $$
-> 
+>
+> Link: https://www.youtube.com/watch?v=i3AkTO9HLXo
+
 
 > [!link] [Mapping of Manifolds to Decision Making](https://www.youtube.com/watch?v=v6VJ2RO66Ag)
 > 
@@ -48,3 +55,5 @@ In the current era, *media beyond written sources* have been effective in commun
 > Another important thing to be noted about manifolds is that high-dimensional topologies are very often mapped to low-dimensional topologies. For example, the topological gradient of a 3D object is a simple point on a 2D plane in space (which can be obtained via a linear transformation). Similarly, some $N$-dimensional manifold mapped out from some $N$ neurons can represent the overall neural activities (i.e. local states in space-time and various biological feedbacks such as temperature, humidity, and so on). This manifold in turn can be localized to a decision making process in Euclidian space. 
 > 
 > Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of hypernetwork of connected components. 
+> 
+> Link: https://www.youtube.com/watch?v=v6VJ2RO66Ag
