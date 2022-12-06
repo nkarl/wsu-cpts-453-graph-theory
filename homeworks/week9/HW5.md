@@ -19,9 +19,9 @@ In the current era, *media beyond written sources* have been effective in commun
 > pizza -->|0.7| hotdog
 > ```
 > 
-> Using a Markov chain we can estimate the probability distribution for the three types of food possibly serve every day.
+> Using a Markov chain we can estimate the probability distribution for the three types of food possibly served every day.
 > 
-> To do that, we map these probabilitistic relations to a directed graph, and thus have our Markov chain for this decision making problem. Given a Markov chain mapped to an adjacency matrix (also called a transition matrix), there exists a state vector $\pi$, called the *stationary distribution*, composed of the probability distributions of all nodes in the chain, and is the convergence of all the state vectors $\pi_i$ where $i = 0, 1, \dots N$.
+> To do that, we map these *states* and their probabilitistic relations to a directed graph, and thus have our Markov chain for this decision making problem. Given a Markov chain mapped to an adjacency matrix (also called a transition matrix), there exists a state vector $\pi$, called the *stationary distribution*, composed of the probability distributions of all nodes in the chain, and is the convergence of all the state vectors $\pi_i$ where $i = 0, 1, \dots N$.
 > 
 > $$
 > \pi\cdot A = \pi
