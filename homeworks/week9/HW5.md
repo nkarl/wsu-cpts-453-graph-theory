@@ -1,3 +1,9 @@
+## 1.
+---
+Give details – two paragraphs will suffice – about your choice for the end-of-semester project.
+
+I am attempt 
+
 ## 2.
 ---
 In the current era, *media beyond written sources* have been effective in communicating complex mathematical ideas to a broad audience. Shining examples of this include YouTube videos such as the 3Blue1Brown videos produced by Grant Sanderson. **Find and provide a short synopsis of two YouTube videos each effectively explaining a problem that involves graph theory**. A “short synopsis” includes ***the URL along with at least two paragraphs*** of explanation and/or narrative.
@@ -28,7 +34,10 @@ In the current era, *media beyond written sources* have been effective in commun
 > $$
 > 
 
-> [!link] [Manifolds](https://www.youtube.com/watch?v=v6VJ2RO66Ag)
-
-One important problem associated with manifolds is *homeomorphism*, which is an isomorphism from some subdivision of a graph $G$ to some subdivision of another graph $G'$. In other words, where the graphic structure is preserved in *isomorphism*, the topological structure is preserved in *homeomorphism*. For example, performing a subdivision (adding a new node) on some edge in graph $G$ should mean that the same action happens on some edge in the graph $G'$, hence preserving their topological mapping.
-
+> [!link] [Mapping of Manifolds to Decision Making](https://www.youtube.com/watch?v=v6VJ2RO66Ag)
+> 
+> One important property associated with manifolds is *homeomorphism*, which is an isomorphism from some subdivision of a graph $G$ to some subdivision of another graph $G'$. In other words, where the graphic structure is preserved in *isomorphism*, the topological structure is preserved in *homeomorphism*. For example, performing a subdivision (adding a new node) on some edge in graph $G$ should mean that the same action happens on some edge in the graph $G'$ and simultaneously preserve their isomorphic relation, and thus preserving their local topological mapping.
+> 
+> Another important thing to be noted about manifolds is that high-dimensional topologies are very often mapped to low-dimensional topologies. For example, the topological gradient of a 3D object is a simple point on a 2D plane in space (which can be obtained via a linear transformation). Similarly, some $N$-dimensional manifold mapped out from some $N$ neurons can represent the overall neural activities (i.e. local states in space-time and various biological feedbacks such as temperature, humidity, and so on). This manifold in turn is localized to a decision making process in Euclidian space. 
+> 
+> Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of hypernetwork of connected components. 
