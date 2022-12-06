@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9b65e2f61c883019",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "homeworks/week9/HW5.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/week9/HW5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/week9/HW5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,23 +138,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md"
+                "file": "homeworks/week9/HW5.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "ba5dbc3e2b2a13de",
+  "active": "9b65e2f61c883019",
   "lastOpenFiles": [
+    "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
     "homeworks/week9/HW5.md",
     "homeworks/week9/Graph Theory 2022 Assignment 5.pdf",
     "homeworks/week10/HW6.md",
-    "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
     "homeworks/Course Paper/Research/hypernetworks.pdf",
     "homeworks/Course Paper/Research/graph_hypernetworks_for_neural.pdf",
     "homeworks/week11/Assessment.Week11.md",
