@@ -2,10 +2,31 @@
 ---
 In the current era, *media beyond written sources* have been effective in communicating complex mathematical ideas to a broad audience. Shining examples of this include YouTube videos such as the 3Blue1Brown videos produced by Grant Sanderson. **Find and provide a short synopsis of two YouTube videos each effectively explaining a problem that involves graph theory**. A “short synopsis” includes ***the URL along with at least two paragraphs*** of explanation and/or narrative.
 
-A Markov chain is a probability distribution wherein the next state is dependent on the previous state, not the entire history sequence of states.
+> [!link] [Markov Chain for Stochastic Decision Making](https://www.youtube.com/watch?v=i3AkTO9HLXo)
+> 
+> A Markov chain is a probability distribution wherein the next state is dependent only on the previous state, not the entire sequence of previous states.
+> 
+> A Markove chain is a very useful construct when we need to deal with non-determinism, i.e. stochastic decision making. For example, let's say we want to go on a pizza date, but our favorite restaurant only serve one type of food out of three everyday (pizza, hot dog, and burger). That means each day is different, with a caveat: the food served today is dependent on what is served on the previous day:
+> 
+> ```mermaid
+> graph LR
+> pizza -->|0.3| burger
+> burger -->|0.6| pizza
+> burger -->|0.2| burger
+> burger -->|0.5| hotdog
+> hotdog -->|0.2| burger
+> hotdog -->|0.5| hotdog
+> pizza -->|0.7| hotdog
+> ```
+> 
+> Using a Markov chain we can estimate the probability distribution for the three types of food possibly serve every day.
+> 
+> To do that, we map these probabilitistic relations to a directed graph, and thus have our Markov chain for this decision making problem. Given a Markov chain mapped to an adjacency matrix (also called a transition matrix), there exists a state vector $\pi$, called the *stationary distribution*, composed of the probability distributions of all nodes in the chain, and is the convergence of all the state vectors $\pi_i$ where $i = 0, 1, \dots N$.
+> 
+> $$
+> \pi\cdot A = \pi
+> $$
+> 
 
-Given a Markov chain (of a directed graph) mapped to an adjacency matrix (which is also called a transition matrix), there exists a state vector $\pi$ composed of the probability distributions of all nodes in the chain. The state vector $\pi$ is the convergence of all the state vectors $\pi_i$ where $i = 0, 1, ... N$.
+> [!link] [Random Forest](https://www.youtube.com/watch?v=v6VJ2RO66Ag)
 
-$$
-\pi\cdot A = \pi
-$$
