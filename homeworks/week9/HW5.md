@@ -28,5 +28,7 @@ In the current era, *media beyond written sources* have been effective in commun
 > $$
 > 
 
-> [!link] [Random Forest](https://www.youtube.com/watch?v=v6VJ2RO66Ag)
+> [!link] [Manifolds](https://www.youtube.com/watch?v=v6VJ2RO66Ag)
+
+One important problem associated with manifolds is *homeomorphism*, which is an isomorphism from some subdivision of a graph $G$ to some subdivision of another graph $G'$. In other words, where the graphic structure is preserved in *isomorphism*, the topological structure is preserved in *homeomorphism*. For example, performing a subdivision (adding a new node) on some edge in graph $G$ should mean that the same action happens on some edge in the graph $G'$, hence preserving their topological mapping.
 
