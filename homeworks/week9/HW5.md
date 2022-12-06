@@ -2,7 +2,14 @@
 ---
 Give details – two paragraphs will suffice – about your choice for the end-of-semester project.
 
-I am attempt 
+*I am researching the application of graph theory in neural network models.* I am planning to put together some kind of relationship between the following topics:
+
+- Graph Theory
+- Graph Neural Networks
+- [HyperNetworks](https://arxiv.org/abs/1609.09106)
+- [Graph HyperNetworks for Neural Architecture Search](https://openreview.net/forum?id=rkgW0oA9FX)
+
+In recent years neural network modeling has become increasingly the go-to choice for solving high-dimensional problems which are highly computationally complex. Being able to relate graph theory and neural network is a very important to me in order to begin tackling these problems.
 
 ## 2.
 ---
@@ -38,6 +45,6 @@ In the current era, *media beyond written sources* have been effective in commun
 > 
 > One important property associated with manifolds is *homeomorphism*, which is an isomorphism from some subdivision of a graph $G$ to some subdivision of another graph $G'$. In other words, where the graphic structure is preserved in *isomorphism*, the topological structure is preserved in *homeomorphism*. For example, performing a subdivision (adding a new node) on some edge in graph $G$ should mean that the same action happens on some edge in the graph $G'$ and simultaneously preserve their isomorphic relation, and thus preserving their local topological mapping.
 > 
-> Another important thing to be noted about manifolds is that high-dimensional topologies are very often mapped to low-dimensional topologies. For example, the topological gradient of a 3D object is a simple point on a 2D plane in space (which can be obtained via a linear transformation). Similarly, some $N$-dimensional manifold mapped out from some $N$ neurons can represent the overall neural activities (i.e. local states in space-time and various biological feedbacks such as temperature, humidity, and so on). This manifold in turn is localized to a decision making process in Euclidian space. 
+> Another important thing to be noted about manifolds is that high-dimensional topologies are very often mapped to low-dimensional topologies. For example, the topological gradient of a 3D object is a simple point on a 2D plane in space (which can be obtained via a linear transformation). Similarly, some $N$-dimensional manifold mapped out from some $N$ neurons can represent the overall neural activities (i.e. local states in space-time and various biological feedbacks such as temperature, humidity, and so on). This manifold in turn can be localized to a decision making process in Euclidian space. 
 > 
 > Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of hypernetwork of connected components. 
