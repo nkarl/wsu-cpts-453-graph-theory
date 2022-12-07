@@ -5,35 +5,33 @@
 - [x] Document all references I have collected
 	- CORE:
 		- Graph Theory:
-			- YouTube [Introduction to Graph Theory: A Computer Science Perspective](https://www.youtube.com/watch?v=LFKZLXVO-Dg)
+			- [x] YouTube [Introduction to Graph Theory: A Computer Science Perspective](https://www.youtube.com/watch?v=LFKZLXVO-Dg)
 			
 		- Graph Neural Networks (GNN):
-			- [Deep Learning For Symbolic Mathematics](https://openreview.net/forum?id=S1eZYeHFDS)
-			- [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
-			
-		- [Graph HyperNetworks]()
+			- [ ] [Deep Learning For Symbolic Mathematics](https://openreview.net/forum?id=S1eZYeHFDS)
+			- [x] [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
+				- [ ] [Understanding Convolutions on Graphs](https://distill.pub/2021/understanding-gnns/#extending)
+
+		- [x] [HyperNetworks](https://openreview.net/forum?id=rkpACe1lx)
+		- [x] [Graph HyperNetworks for Network Architectures Search (NAS)](https://arxiv.org/abs/1810.05749)
 			
 		- Convolution
-			- YouTube [But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)
-			- [Convolution & Laplace](https://lpsa.swarthmore.edu/Convolution/ConvLaplace.html)
-			- [Understanding Convolutions on Graphs](https://distill.pub/2021/understanding-gnns/#extending)
-			
-		- Laplace Transform
-			- [Laplacian](https://mathworld.wolfram.com/Laplacian.html)
-			- [A Short Tutorial on Graph Laplacians, Laplacian Embedding, and Spectral Clustering](https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf)
-			- [Laplace Transform](https://www.wikiwand.com/en/Laplace_transform)
-			- YouTube [Laplace Transform](https://www.youtube.com/watch?v=n2y7n6jw5d0)
-			- 
-			
+			- [ ] YouTube [But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)
+			- [ ] [Convolution & Laplace](https://lpsa.swarthmore.edu/Convolution/ConvLaplace.html)
+			- Laplace Transform
+				- [ ] [Laplacian](https://mathworld.wolfram.com/Laplacian.html)
+				- [ ] [A Short Tutorial on Graph Laplacians, Laplacian Embedding, and Spectral Clustering](https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf)
+				- [ ] [Laplace Transform](https://www.wikiwand.com/en/Laplace_transform)
+				- [ ] YouTube [Laplace Transform](https://www.youtube.com/watch?v=n2y7n6jw5d0)
 			
 	- Extra:
 		- Graph Theory:
-			- [Everything you need to know about Graph Theory for Deep Learning](https://towardsdatascience.com/graph-theory-and-deep-learning-know-hows-6556b0e9891b)
-			- [Graph Convolutional Networks — Explained](https://towardsdatascience.com/graph-convolutional-networks-explained-d88566682b8f)
-			- [Graph Neural Network and Some of GNN Applications: Everything You Need to Know](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications)
+			- [ ] [Everything you need to know about Graph Theory for Deep Learning](https://towardsdatascience.com/graph-theory-and-deep-learning-know-hows-6556b0e9891b)
+			- [ ] [Graph Convolutional Networks — Explained](https://towardsdatascience.com/graph-convolutional-networks-explained-d88566682b8f)
+			- [ ] [Graph Neural Network and Some of GNN Applications: Everything You Need to Know](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications)
 			
 		- Markov Chains:
-			- YouTube [Markov Chains: Recurrence, Irreducibility, Classes | Part - 2](https://www.youtube.com/watch?v=VNHeFp6zXKU&list=PLM8wYQRetTxBkdvBtz-gw8b9lcVkdXQKV&index=4)
+			- [ ] YouTube [Markov Chains: Recurrence, Irreducibility, Classes | Part - 2](https://www.youtube.com/watch?v=VNHeFp6zXKU&list=PLM8wYQRetTxBkdvBtz-gw8b9lcVkdXQKV&index=4)
 			
 	
 - [ ] Read and ranklist which references will be used
@@ -45,6 +43,7 @@
 ## Prerequisite
 ---
 #### 0. Graph Neural Networks (GNN)
+
 - [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
 - [Understanding Convolutions on Graphs](https://distill.pub/2021/understanding-gnns/)
 
@@ -52,7 +51,7 @@
 
 > [!info] node embedding
 > - is a way to represent nodes as vectors.
-> - captures the topology of the network.
+> - captures the topology of the network. Topology deals with meaningful structure, i.e. global geometric structure of the network. This is especially important for very large and complex network composed of a variety of neural networks.
 
 
 Each node $v$ stores an internal node embedding vector $\boldsymbol{h}_v^{(t)}\in\mathbb{R}^D$, and is updated recurrently:
@@ -107,6 +106,7 @@ $$
 
 
 #### 1. HyperNetworks (HN)
+
 A neural network that generates the parameters of another network. A HN is an abstraction, similar to how a phenotype is parametrized by a genotype.
 
 The focus of the *Google paper* is to show that HN is a useful for deep CNN and long RNN as a relaxed form of weight-sharing across layers.
@@ -181,6 +181,7 @@ $$
 The Long Short-Term Memory (LSTM) architecture (Hochreiter & Schmidhuber, 1997) is usually better than the Basic RNN at storing and retrieving information over longer time steps.
 
 #### 2. Graph HyperNetworks for Network Architectures Search (NAS)
+
 - **G**raph **H**yper-**N**etworks (GHN) predicts the performance of any unseen neural networks by operating their *computational graph representations*.
 - GHN can be generalized and applied to *anytime-prediction*, and outperform existing manually designed models.
 - Traditional NAS is expensive since **Stochastic Gradient Descent is expensive**.
@@ -190,11 +191,12 @@ In this work,
 - we advocate for a *computation graph representation* as it *allows for the topology of an architecture to be explicitly modeled*.
 - Furthermore, it is *intuitive to understand* and can be *easily extensible to various graph sizes*.
 
-##### Prerequisites:
-- Graph Neural Networks (GNN)
-- Graph HyperNetworks (HN)
+##### Prerequisites
+- [[#0. Graph Neural Networks (GNN)|Graph Neural Networks (GNN)]]
+- [[#1. HyperNetworks (HN)|Graph HyperNetworks (HN)]]
 
 #### 4. Convolution on Graphs
+
 > [!note]
 > This is a core mathematic method in some models.
 
