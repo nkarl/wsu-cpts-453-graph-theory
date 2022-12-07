@@ -69,6 +69,8 @@ In this work,
 
 > [!note]
 > This is a core mathematic method in some models.
+> 
+> *Convolution is essential in preserving the topology of graphs.*
 
 A convolution is traditionally applied on images. However, images in turn can be represented by matrices. Graphs are also represented by matrices. Thus, it is possible to extend convolution to graph.
 
