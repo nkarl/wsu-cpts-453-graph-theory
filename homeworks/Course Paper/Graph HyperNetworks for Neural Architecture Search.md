@@ -58,7 +58,7 @@
 - **A trained HN is well correlated with Stochastic Gradient Descent**, and thus can surrogate the weight generation for the main network.
 
 In this work,
-- we advocate for a *computation graph representation* as it *allows for the topology of an architecture to be explicitly modeled*.
+- we advocate for a **computation graph representation because the topology of an architecture can be explicitly modeled**. ^aa4a0b
 - Furthermore, it is *intuitive to understand* and can be *easily extensible to various graph sizes*.
 
 ##### Prerequisites
@@ -127,6 +127,9 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 - Graph Isomorphism Networks (GIN)
 
 2. 
+
+**Transition to Graph [[#2. Graph HyperNetworks for Network Architectures Search (NAS)|HyperNetworks]]**.
+
 
 
 ## References
