@@ -57,3 +57,6 @@ In the current era, *media beyond written sources* have been effective in commun
 > Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of hypernetwork of connected components. 
 > 
 > Link: https://www.youtube.com/watch?v=v6VJ2RO66Ag
+
+^a39b5a
+

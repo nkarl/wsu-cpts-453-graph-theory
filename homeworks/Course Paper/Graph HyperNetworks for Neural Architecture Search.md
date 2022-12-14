@@ -115,6 +115,9 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 - **for** $t < 0$:
 	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $|t|$ along the $\tau$-axis towards $-\infty$
 
+In this iteration in graph neural network:
+
+
 > [!note]
 > The convolution at node $v$ occurs only with nodes $u$ which are not more than $d$ hops away. Thus, these polynomial filters are localized. The degree of the localization is governed completely by d.
 > 
@@ -128,9 +131,11 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 
 2. 
 
+Thanks to node representation/embedding learning, (embedding: mapping individual nodes to fixed-size real-valued vectors). In other words, a feature vector can be abstracted away into a representational node in a HyperNetwork.
+
 **Transition to Graph [[#2. Graph HyperNetworks for Network Architectures Search (NAS)|HyperNetworks]]**.
 
-
+Illustrate the importance of graph representation via [[HW5#^a39b5a|manifolds]].
 
 ## References
 ---
