@@ -80,11 +80,24 @@ First we need a graph Laplacian.
 ---
 In recent years, neural networks have increasingly become the go-to modeling method for formulating and solving computationally complex problems of high-dimensionality. In this paper I will attempt to parse out why graphy theory is an essential component of this new generation of solutions.
 
+In this paper I am going to explore a form of graph isomorphism, *topology*. I think this is a very interesting topic, the understanding of which can facilitate solving these high-dimensional problems.
+
 Graphs are the perfect representation for a complex system. A graph is capable of denoting the critical nexuses and the traffic, i.e. input and output at towards and away from these nexuses. Furthermore, graphs are perfect tool to represent the hierarchical structure of a system.
 
 For example, a tree is a very useful graph structure to represent a filtering or aggretating structure.
 
 Another example, a Markov chain can be used to represent a probabilistic decision making model.
+
+The math required for maintaining *topology* between graphs:
+- Laplace transformation and Laplacian matrix
+- Convolution
+
+1. Convolution
+Convolution has been adopted widely in the field of machine learning, in neural networks for image processing. At the end of the day, an image can be represented by a matrix. In other words, a matrix is a special kind of graph. An image is a graph with a very regular grid-like structure, where the individual pixels are nodes, and the RGB channel values at each pixel are the node features.
+
+A Convolution is a math operation that 
+
+2. 
 
 
 ## References
