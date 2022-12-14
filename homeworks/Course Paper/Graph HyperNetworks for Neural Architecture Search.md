@@ -93,9 +93,38 @@ The math required for maintaining *topology* between graphs:
 - [Convolution](obsidian://open?vault=437-machine-learning&file=notes%2Fmath%2FConvolution)
 
 1. Convolution
+
 Convolution has been adopted widely in the field of machine learning, in neural networks for image processing. At the end of the day, an image can be represented by a matrix. In other words, a matrix is a special kind of graph. An image is a graph with a very regular grid-like structure, where the individual pixels are nodes, and the RGB channel values at each pixel are the node features.
 
-A Convolution is a math operation that 
+The [convolution](https://www.wikiwand.com/en/Convolution) of $f$ and $g$ is written $f ∗ g$, denoting the operator with the symbol ∗.
+
+It is defined as *the integral of the product of the two functions **after one is reflected about the y-axis and shifted***. As such, it is a particular kind of [integral transform](https://www.wikiwand.com/en/Integral_transform "Integral transform"):
+$$
+(f * g)(t) := \int_{-\infty}^{\infty} f(\tau)\cdot g(t-\tau)\cdot d\tau
+$$
+
+or (due to commutativity):
+$$
+(f * g)(t) := \int_{-\infty}^{\infty} f(t-\tau)\cdot g(\tau)\cdot d\tau
+$$
+
+where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau)}$ weighted by the function $\boldsymbol{g(-\tau)}$ is shifted**. As $t$ changes, the weighting function $\boldsymbol{g(t-\tau)}$ *emphasizes different parts of the input function* $\boldsymbol{f(\tau)}$:
+
+- **for** $t > 0$:
+	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $t$ along the $\tau$-axis towards $+\infty$
+- **for** $t < 0$:
+	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $|t|$ along the $\tau$-axis towards $-\infty$
+
+> [!note]
+> The convolution at node $v$ occurs only with nodes $u$ which are not more than $d$ hops away. Thus, these polynomial filters are localized. The degree of the localization is governed completely by d.
+> 
+> In other words, *topology is preserved*.
+
+*This extension of convolution to graphs is a breakthrough*, because it allows for the localization of group neurons aggregated together by a distance $d$. The immediate applications are the following graph neural networks:
+- Graph Convolutional Networks (GCN)
+- Graph Attention Networks (GAT)
+- Graph Sample and Aggregate (GraphSAGE)
+- Graph Isomorphism Networks (GIN)
 
 2. 
 
