@@ -32,48 +32,12 @@
             }
           },
           {
-            "id": "b015f5696b1c9d51",
+            "id": "5dea2779fc50ec2e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "homeworks/Course Paper/Paper.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f19e97f89f908e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homeworks/week10/HW6.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84c99d76b0a9cdcd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homeworks/Course Paper/Fundamentals/Graph Neural Networks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6fb95e46efc1598e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homeworks/Course Paper/Fundamentals/HyperNetworks.md",
                 "mode": "source",
                 "source": false
               }
@@ -197,13 +161,13 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b015f5696b1c9d51",
+  "active": "5dea2779fc50ec2e",
   "lastOpenFiles": [
     "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
     "homeworks/Course Paper/Paper.md",
     "homeworks/Course Paper/Fundamentals/Graph Neural Networks.md",
-    "homeworks/Course Paper/Fundamentals/HyperNetworks.md",
     "homeworks/week10/HW6.md",
+    "homeworks/Course Paper/Fundamentals/HyperNetworks.md",
     "homeworks/week9/HW5.md",
     "homeworks/Course Paper/write.pdf",
     "homeworks/Course Paper/paper.pdf",
