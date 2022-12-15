@@ -2,9 +2,14 @@
 
 <h1 align='center'>Why Convolution Is Important in Modeling Graph Topology for Computationally Complex Problems</h1>
 
+### Introduction
+
 In recent years, neural networks have increasingly become the go-to modeling method for formulating and solving computationally complex problems of high-dimensionality. In essence, neural networks themselves are graphs. Therefore, I am convinced that adopting a better understanding of graph theory will open up our interface with the world to more effective ways of solving problems.
 
 In this paper I will attempt to parse out why the mathematical branch of graph theory is an essential component in this new generation of solving computationally expensive problems, most immediately to my topic of interest, neural networks, and beyond. I am going to explore convolution as a method to manipulate the form of graph isomorphism, effectively preserving or changing the topology of a graph. I think this is a very interesting topic, the understanding of which can open up new ways to solve complex high-dimensional problems.
+
+
+### Graphs as An Effective Modeling Tool
 
 Graphs are very robust representation for complex systems.
 
@@ -29,6 +34,9 @@ Graphs can also be extremely useful where modeling the hierarchical structure of
 
 Even prior to the rise of neural networks, graphs have appeared in a more static form: images. However, in a neural network, the architecture is very important. The inner layers of a neural network can actually be abstracted into a vector of hyperparameters which then can be tweak to influence the network's performance. This becomes even more apparent when one employs the ensemble method, which involves using mutliple learning methods concurrently and let them vote for the best results.
 
+
+### Extending Convolution to Graphs
+
 In the context of neural networks for processing images, an image can be represented by a matrix. In other words, a matrix is a special kind of graph. An image is a graph with a very regular grid-like structure, where the individual pixels are nodes, and the RGB channel values at each pixel are the node features. At the core of image processing is the mathemical procedure of convolution.
 
 The [convolution](https://www.wikiwand.com/en/Convolution) of a function $f$ and another function $g$ is written $f ∗ g$, with the symbol ∗ as the convolution operator.
@@ -51,7 +59,7 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $|t|$ along the $\tau$-axis towards $-\infty$
 
 
-However, this is a for continous form. We want to [extend this to be applicable on graphs](https://distill.pub/2021/understanding-gnns/#extending), which are discrete structures.
+However, this form is for continous functions. We want to [extend this to be applicable on graphs](https://distill.pub/2021/understanding-gnns/#extending), which are discrete structures.
 
 In the context of graph theory, we know that, much like an image, a graph can be represented in matrix form with degree matrix $D$ and adjacency matrix $A$. Thus, we perform a linear combination on the Laplacian matrix of the graph with some vector. We produce the following polynomials:
 $$
@@ -135,7 +143,10 @@ From this foundation, we can extend this into **spectral convolution** to apply 
 
 This extension of convolution to graphs is a breakthrough, because it allows for the localization of nodes and mapping them into equivariants, effectively preserving the topology of the global graph.
 
-Going in a step further, This has open up a new direction into building HyperNetworks that can operate on the computational graph representation of neural networks. Thanks to node representation/embedding learning, i.e. the mapping of individual nodes to fixed-size real-valued vectors, we can simplify a complex system into a computational graph presentation. In other words, a feature vector can be abstracted away into a representative node in a HyperNetwork.
+
+### Cutting-Edge Applications
+
+Going in a step further, this advance in research has opened up a new direction into building meta-networks that can operate on the computational graph representation of other neural networks. Thanks to node representation/embedding learning, i.e. the mapping of individual nodes to fixed-size real-valued vectors, we can simplify a complex system into a computational graph presentation. In other words, a feature vector can be abstracted away into a representative node in a meta-network.
 
 This leads us to [HyperNetwork](https://openreview.net/forum?id=rkpACe1lx). HyperNetworks are indeed very useful in operating on manifolds, i.e. high dimensional object, which are increasingly becoming more relevant with the exponential generation of data and the accompanying demand for computational throughput.
 
@@ -147,10 +158,19 @@ This really ties it to why HyperNetworks and the ability to use them to operate 
 
 This is another breakthrough in solving complex computational problems in itself. The reason is because traditionally neural network architecture search has been expensive for the simple reason that Stochastic Gradient Descent is expensive to compute. However, with the advent of graph modeling, a trained HyperNetwork is well correlated with Stochastic Gradient Descent, and thus can effectively surrogate the weight generation for the main network while being much more intuitive and simpler. This allows for the explicit modeling of topology of an architecture. Furthermore, it is intuitive to understand and can be easily extensible to various graph sizes.
 
+
+### Closing Thoughts
+
+Given the increasingly more complex and massive problems that our interconnected and data-driven world is experiencing rapidly, I strongly believe that it is extremely important to gain and equip myself with better understanding of graph theory and state-of-the-art researches and applications.
+
+There has been a lot of fear and worries in regards to the development of artificial intelligence as the next technological event horizon. However, in my opinion they will become another new technology in service to mankind just as the printing press, the combustion engine, the Internet and the vast many other technologies have and continued to help use create a more abundant world.
+
+Obviously, greater and more advanced technologies come with great danger of abuse and thus even greater vigilance and responsibility. However, only by equipping ourselves with better knowledge, can we be at the forefront of managing our technologies wisely and utilizing them effectively. This has always been true throughout history and there is no reason to believe otherwise.
+
 <div style="page-break-after:always"></div>
 
-## References
----
+### References
+
 - [Convolution](https://www.wikiwand.com/en/Convolution)
 	- https://www.wikiwand.com/en/Convolution
 - [Integral Transform](https://www.wikiwand.com/en/Integral_transform "Integral transform")
