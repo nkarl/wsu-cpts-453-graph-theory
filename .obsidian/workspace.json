@@ -20,12 +20,36 @@
             }
           },
           {
-            "id": "57c702d6f145b0eb",
+            "id": "fe4992988b27bdb9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21137f6ff82c9643",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "homeworks/Course Paper/Paper.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f19e97f89f908e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "homeworks/week9/HW5.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,21 +78,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6064af15e0907cda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homeworks/week9/HW5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/Course Paper/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
+                "file": "homeworks/Course Paper/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md"
+                "file": "homeworks/Course Paper/Paper.md"
               }
             }
           }
@@ -185,17 +197,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "57c702d6f145b0eb",
+  "active": "21137f6ff82c9643",
   "lastOpenFiles": [
+    "homeworks/Course Paper/write.pdf",
+    "homeworks/Course Paper/paper.pdf",
+    "homeworks/Course Paper/Paper.md",
+    "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
+    "homeworks/week9/HW5.md",
     "homeworks/Course Paper/Fundamentals/Graph Neural Networks.md",
     "homeworks/Course Paper/Fundamentals/HyperNetworks.md",
-    "homeworks/week9/HW5.md",
     "homeworks/week9/Graph Theory 2022 Assignment 5.pdf",
-    "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
     "homeworks/Course Paper/Research/hypernetworks.pdf",
-    "homeworks/week11/KanbanAssessment.md",
-    "homeworks/week15/HW7.md",
-    "homeworks/week11/Assessment.Week11.md",
-    "homeworks/week10/HW6.md"
+    "homeworks/week11/KanbanAssessment.md"
   ]
 }

@@ -1,47 +1,5 @@
 #Graph-HyperNetwork #GHN #Neural-Architecture-Search #NAS
 
-## TODO
----
-- [x] Document all references I have collected
-	- CORE:
-		- Graph Theory:
-			- [x] YouTube [Introduction to Graph Theory: A Computer Science Perspective](https://www.youtube.com/watch?v=LFKZLXVO-Dg)
-			
-		- Graph Neural Networks (GNN):
-			- [ ] [Deep Learning For Symbolic Mathematics](https://openreview.net/forum?id=S1eZYeHFDS)
-			- [x] [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
-			- Convolution
-				- [ ] [Understanding Convolutions on Graphs](https://distill.pub/2021/understanding-gnns/#extending)
-				- [ ] YouTube [But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)
-				- [ ] [Convolution & Laplace](https://lpsa.swarthmore.edu/Convolution/ConvLaplace.html)
-				- Laplace Transform
-					- [ ] [Laplacian](https://mathworld.wolfram.com/Laplacian.html)
-					- [ ] [A Short Tutorial on Graph Laplacians, Laplacian Embedding, and Spectral Clustering](https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf)
-					- [ ] [Laplace Transform](https://www.wikiwand.com/en/Laplace_transform)
-					- [ ] YouTube [Laplace Transform](https://www.youtube.com/watch?v=n2y7n6jw5d0)
-			
-		- [x] [HyperNetworks](https://openreview.net/forum?id=rkpACe1lx)
-		- [x] [Graph HyperNetworks for Network Architectures Search (NAS)](https://arxiv.org/abs/1810.05749)
-			
-	- Extra:
-		- Graph Theory:
-			- [x] [Everything you need to know about Graph Theory for Deep Learning](https://towardsdatascience.com/graph-theory-and-deep-learning-know-hows-6556b0e9891b)
-			- [ ] [Graph Convolutional Networks — Explained](https://towardsdatascience.com/graph-convolutional-networks-explained-d88566682b8f)
-			- [ ] [Graph Neural Network and Some of GNN Applications: Everything You Need to Know](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications)
-			
-		- Manifolds & Topology
-			- [ ] [Neural Networks, Manifolds and Topology](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/)
-			
-		- Markov Chains:
-			- [ ] YouTube [Markov Chains: Recurrence, Irreducibility, Classes | Part - 2](https://www.youtube.com/watch?v=VNHeFp6zXKU&list=PLM8wYQRetTxBkdvBtz-gw8b9lcVkdXQKV&index=4)
-			
-	
-- [ ] Read and ranklist which references will be used
-- [ ] Plan out the structure of the paper
-	- [ ] Narrative paper
-	- [ ] Limit: 5 pages
-
-
 ## Prerequisite
 ---
 #### 0. Graph Neural Networks (GNN)
@@ -129,12 +87,11 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 - **for** $t < 0$:
 	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $|t|$ along the $\tau$-axis towards $-\infty$
 
-In this iteration in graph neural network. the convolution procedure is dependent on the polynomials of the Laplacian:
+In this iteration in graph neural network, the convolution applies to the polynomials of the Laplacian matrix of a graph:
 
 $$
 p_w(L) = w_0I_n+w_1L+w_2L^2+\dots+w_dL^d=\sum_{i=0}^{d} w_iL^i
 $$
-
 > [!note]
 > The convolution at node $v$ occurs only with nodes $u$ which are not more than $d$ hops away. Thus, these polynomial filters are localized. The degree of the localization is governed completely by d.
 > 
@@ -148,9 +105,11 @@ $$
 
 2. 
 
-Thanks to node representation/embedding learning, (embedding: mapping individual nodes to fixed-size real-valued vectors). In other words, a feature vector can be abstracted away into a representational node in a HyperNetwork.
+Thanks to node representation/embedding learning, (embedding: mapping individual nodes to fixed-size real-valued vectors). In other words, a feature vector can be abstracted away into a representative node in a HyperNetwork.
 
 **Transition to Graph [[#2. Graph HyperNetworks for Network Architectures Search (NAS)|HyperNetworks]]**.
+
+This leads us to HyperNetwork. HyperNetworks are indeed very useful in represent the manifolds of high dimensional input.
 
 **Illustrate the importance of graph representation** via [[HW5#^a39b5a|manifolds]].
 
@@ -163,8 +122,6 @@ Thanks to node representation/embedding learning, (embedding: mapping individual
 > Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of hypernetwork of connected components. 
 > 
 > Link: https://www.youtube.com/watch?v=v6VJ2RO66Ag
-
-This brings us back to HyperNetwork. HyperNetworks are indeed very useful in represent the manifolds of high dimensional input.
 
 ## References
 ---
