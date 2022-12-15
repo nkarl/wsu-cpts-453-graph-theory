@@ -131,7 +131,7 @@ $$
 
 In other words, a convolution at node $v$ only happens with nodes $u$ that are not more than $d$ hops away from $v$. This implies that the polynomial filters are localized and the degree $d$ is the upperbound to the degree of localization.
 
-From this foundation, we can extend this into spectral convolution to apply for the global graph. In short, by utilizing some [magic](https://distill.pub/2021/understanding-gnns/#spectral) and the eingenvector of $L$, we can effectively manipulate the topology of a graph and produce smoothed out or roughed up versions of it.
+From this foundation, we can extend this into **spectral convolution** to apply for the global graph. In short, by utilizing some [magic](https://distill.pub/2021/understanding-gnns/#spectral) and the eingenvector of $L$, we can effectively manipulate the topology of a graph and produce smoothed out or roughed up versions of it.
 
 This extension of convolution to graphs is a breakthrough, because it allows for the localization of nodes and mapping them into equivariants, effectively preserving the topology of the global graph.
 
@@ -141,16 +141,23 @@ This leads us to [HyperNetwork](https://openreview.net/forum?id=rkpACe1lx). Hype
 
 One important property associated with manifolds is **homeomorphism**, or topological isomorphism, which is an isomorphism from some subdivision of a graph $G$ to some subdivision of another graph $G'$. In other words, where the graphic structure is preserved in isomorphism, the topological structure is preserved in homeomorphism. For example, performing a subdivision (adding a new node) on some edge in graph $G$ should mean that the same action happens on some edge in the graph $G'$ and simultaneously preserve their isomorphic relation, and thus preserving their local topological mapping.
 
-I understand that this is a very advanced topic which is beyond my undergraduate knowledge. Therefore, I will not dig too deep into this. However, I think it is worth noting that manifolds are that high-dimensional topologies and are very often mapped to low-dimensional topologies. For example, the topological gradient of a 3D object is a simple point on a 2D plane in space (which can be obtained via a linear transformation). Similarly, some $N$-dimensional manifold mapped out from some $N$ neurons can represent the overall neural activities (i.e. local states in space-time and various biological feedbacks such as temperature, humidity, and so on). This manifold in turn can be localized to a decision making process in Euclidian space. Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of hypernetwork of connected components.
+I understand that this is a very advanced topic which is beyond my undergraduate knowledge. Therefore, I will not dig too deep into this area. However, I think it is worth noting that manifolds are high-dimensional topologies and that they are very often mapped to low-dimensional topologies. For example, the topological gradient of a 3D object is a simple point on a 2D plane in space (which can be obtained via a linear transformation). Following this train of thought, we can apply this to the biological neural network: the brain. Indeed, some $N$-dimensional manifold mapped out from some collections of neurons can represent neural activities (i.e. local states in space-time and various biological feedbacks such as temperature, humidity, and so on). This manifold in turn can be abstract out into a decision making process in Euclidian space. Furthermore, the graph of $N$ neurons are indeed composed of some $M$ subgraphs of related neurons (neurons that are typically in close proximity and activate on the same input). Thus, it could be further be mapped to a sort of HyperNetwork of connected components.
 
-This really ties it to why hypernetworks and the ability to use them to generalize other networks are an incredible breakthrough. In a recent paper, [Graph HyperNetworks for Neural Architecture Search](https://arxiv.org/abs/1810.05749), researchers have been able to predict the performance of any unseen neural networks by operating on top their computational graph representations. Most importantly, Graph HyperNetworks can be generalized and applied to anytime-prediction and have shown to outperform existing manually designed models.
+This really ties it to why HyperNetworks and the ability to use them to operate on other networks are an incredible breakthrough. In a recent paper, [Graph HyperNetworks for Neural Architecture Search](https://arxiv.org/abs/1810.05749), researchers have been able to predict the performance of any unseen neural networks by operating on top their computational graph representations. Most importantly, Graph HyperNetworks can be generalized and applied to anytime-prediction and have shown to outperform existing manually designed models.
 
-This is another breakthrough in solving complex computational problems in itself. The reason is because traditionally neural network architecture search has been expensive for the simple reason that Stochastic Gradient Descent is expensive to compute. However, a trained HyperNetwork is well correlated with Stochastic Gradient Descent, and thus can effectively surrogate the weight generation for the main network. This allows for the explicit modeling of topology of an architecture. Furthermore, it is intuitive to understand and can be easily extensible to various graph sizes.
+This is another breakthrough in solving complex computational problems in itself. The reason is because traditionally neural network architecture search has been expensive for the simple reason that Stochastic Gradient Descent is expensive to compute. However, with the advent of graph modeling, a trained HyperNetwork is well correlated with Stochastic Gradient Descent, and thus can effectively surrogate the weight generation for the main network while being much more intuitive and simpler. This allows for the explicit modeling of topology of an architecture. Furthermore, it is intuitive to understand and can be easily extensible to various graph sizes.
+
+<div style="page-break-after:always"></div>
 
 ## References
 ---
 - [Convolution](https://www.wikiwand.com/en/Convolution)
+	- https://www.wikiwand.com/en/Convolution
 - [Integral Transform](https://www.wikiwand.com/en/Integral_transform "Integral transform")
+	- https://www.wikiwand.com/en/Integral_transform
 - [Laplacian Matrix](https://www.wikiwand.com/en/Laplacian_matrix)
+	- https://www.wikiwand.com/en/Laplacian_matrix
 - [HyperNetworks](https://openreview.net/forum?id=rkpACe1lx)
+	- https://openreview.net/forum?id=rkpACe1lx
 - [Graph HyperNetworks for Neural Architecture Search](https://arxiv.org/abs/1810.05749)
+	- https://arxiv.org/abs/1810.05749
