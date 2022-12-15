@@ -87,11 +87,60 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 - **for** $t < 0$:
 	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $|t|$ along the $\tau$-axis towards $-\infty$
 
-In this iteration in graph neural network, the convolution applies to the polynomials of the Laplacian matrix of a graph:
+We know that a graph is a discrete structure and thus can be represented in matrix form with degree matrix $D$ and adjacency matrix $A$. Therefore, the convolution procedure is dependent on the polynomials of its Laplacian matrix:
 
 $$
 p_w(L) = w_0I_n+w_1L+w_2L^2+\dots+w_dL^d=\sum_{i=0}^{d} w_iL^i
 $$
+
+where $\boldsymbol{w}$ is the coefficient vector. Each of these polynomial is effectively a filter in convolutional neural networks, and therefore $d$ is the degree of the filter. Now, we can consider that each node can represent vector of features.
+
+```mermaid
+graph TB
+title[<b>some graph G</b><br></br>Each node represent a vector of many features.]
+```
+```mermaid
+graph BT
+A --- B
+C --- B
+C --- D
+C --- E
+C --- F
+C --- G
+```
+
+Let's say we pick out one feature. In the `*.csv` data format, this is a simple column in the data matrix. We map each node (or row in the data matrix) to a new feature vector $\vec{x}$:
+$$
+\boldsymbol{\vec{x}}: \{x_v\}\quad\text{for each vertex } v\in V.
+$$
+
+We then can define the convolution operation with some filter $p_w$ as:
+$$
+Conv = p_w(L)\cdot\vec{x}
+$$
+First, we consider the special case where $w_0=1$ (0) and $w_1=1$ (1). In both cases, we hold all other coefficients to be 0.
+
+(0):
+$$
+Conv(\vec{x}) = p_w(L)\cdot\vec{x} = \sum_{i=0}^{d=0} w_iL^i\cdot\vec{x} = (1)\cdot I\cdot\vec{x} = \vec{x}
+$$
+
+(1):
+$$
+\begin{align}
+Conv(\vec{x}) = p_w(L)\cdot\vec{x} = \sum_{i=0}^{d=1} w_iL^i\cdot\vec{x} = (1)\cdot L\cdot\vec{x} &= L\cdot\vec{x}\cr
+\end{align}
+$$
+Note that in the case of (1) we then apply this convolution for some vertex $v$:
+$$
+\begin{align}
+Conv(\vec{x})_v = (L\cdot\vec{x})_v &= L_v\cdot\vec{x}\cr
+&=\sum_{u\in G} L_{vu}\cdot x_u\cr
+&=\sum_{u\in G}(D_{vu} - A_{vu})\cdot x_u\cr
+&=D_v\cdot x_v - \sum_{u\in G}x_u
+\end{align}
+$$
+
 > [!note]
 > The convolution at node $v$ occurs only with nodes $u$ which are not more than $d$ hops away. Thus, these polynomial filters are localized. The degree of the localization is governed completely by d.
 > 

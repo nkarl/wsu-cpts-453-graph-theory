@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homeworks/week9/HW5.md",
+                "file": "homeworks/week10/HW6.md",
                 "mode": "source",
                 "source": false
               }
@@ -199,15 +199,15 @@
   },
   "active": "21137f6ff82c9643",
   "lastOpenFiles": [
-    "homeworks/Course Paper/write.pdf",
-    "homeworks/Course Paper/paper.pdf",
-    "homeworks/Course Paper/Paper.md",
     "homeworks/Course Paper/Graph HyperNetworks for Neural Architecture Search.md",
-    "homeworks/week9/HW5.md",
+    "homeworks/Course Paper/Paper.md",
     "homeworks/Course Paper/Fundamentals/Graph Neural Networks.md",
     "homeworks/Course Paper/Fundamentals/HyperNetworks.md",
+    "homeworks/week10/HW6.md",
+    "homeworks/week9/HW5.md",
+    "homeworks/Course Paper/write.pdf",
+    "homeworks/Course Paper/paper.pdf",
     "homeworks/week9/Graph Theory 2022 Assignment 5.pdf",
-    "homeworks/Course Paper/Research/hypernetworks.pdf",
-    "homeworks/week11/KanbanAssessment.md"
+    "homeworks/Course Paper/Research/hypernetworks.pdf"
   ]
 }

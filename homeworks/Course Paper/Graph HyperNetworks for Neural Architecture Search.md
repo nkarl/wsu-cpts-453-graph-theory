@@ -129,11 +129,12 @@ where **$\boldsymbol{t}$ is the amount at which the function $\boldsymbol{f(\tau
 - **for** $t < 0$:
 	- $\boldsymbol{g(t-\tau)=g(-\tau)}$ that shifts by the amount $|t|$ along the $\tau$-axis towards $-\infty$
 
-In this iteration in graph neural network. the convolution procedure is dependent on the polynomials of the Laplacian:
+We know that a graph is a discrete structure and thus can be represented in matrix form with degree matrix $D$ and adjacency matrix $A$. Therefore, the convolution procedure is dependent on the polynomials of its Laplacian matrix:
 
 $$
 p_w(L) = w_0I_n+w_1L+w_2L^2+\dots+w_dL^d=\sum_{i=0}^{d} w_iL^i
 $$
+
 
 > [!note]
 > The convolution at node $v$ occurs only with nodes $u$ which are not more than $d$ hops away. Thus, these polynomial filters are localized. The degree of the localization is governed completely by d.
