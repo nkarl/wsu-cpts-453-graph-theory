@@ -127,9 +127,7 @@ $$
 
 (1):
 $$
-\begin{align}
-Conv(\vec{x}) = p_w(L)\cdot\vec{x} = \sum_{i=0}^{d=1} w_iL^i\cdot\vec{x} = (1)\cdot L\cdot\vec{x} &= L\cdot\vec{x}\cr
-\end{align}
+Conv(\vec{x}) = p_w(L)\cdot\vec{x} = \sum_{i=0}^{d=1} w_iL^i\cdot\vec{x} = (1)\cdot L\cdot\vec{x} = L\cdot\vec{x}
 $$
 Note that in the case of (1) we then apply this convolution for some vertex $v$:
 $$
@@ -137,9 +135,33 @@ $$
 Conv(\vec{x})_v = (L\cdot\vec{x})_v &= L_v\cdot\vec{x}\cr
 &=\sum_{u\in G} L_{vu}\cdot x_u\cr
 &=\sum_{u\in G}(D_{vu} - A_{vu})\cdot x_u\cr
-&=D_v\cdot x_v - \sum_{u\in G}x_u
+&=D_v\cdot x_v - \sum_{u\in G}x_u\cr
+\cr
+&\text{because for any Laplacian matrix:}\cr
+&L_{i,j} = \cases{
+\deg(v_i) &if $i=j$\cr
+-1 &if $i\neq j$ and $v_i$ is adjacent to $v_j$\cr
+0 &otherwise
+}
 \end{align}
 $$
+
+Thanks to the last case, we know that when the there are no edges between two nodes $u$ and $v$ are larger than some degree $i$, we have an all-zero Laplacian matrix:
+$$
+dist_G(u, v) > 1\quad\text{leads to}\quad L_{vu}^i = 0
+$$
+
+This means that a convolution between the feature vector and some polynomial filter of degree $d$ produces:
+$$
+\begin{align}
+Conv(\vec{x}) = p_w(L)\cdot\vec{x} &= \sum_{i=0}^{d} w_iL^i\cdot\vec{x}\cr
+&=\sum_{i=0}^d w_i\sum_{u\in G}L_{vu}^i x_u\cr
+&=\sum_{i=0}^d w_i\underbrace{\sum_{u\in G}L_{vu}^i x_u}_{dist_G(v,u)\leq i}\cr
+\end{align}
+$$
+
+In other words, a convolution at node $v$ only happens nodes $u$ that are not more than $d$ hops away. This implies that the polynomial filters are localized and the degree $d$ is the upperbound to the degree of localization.
+
 
 > [!note]
 > The convolution at node $v$ occurs only with nodes $u$ which are not more than $d$ hops away. Thus, these polynomial filters are localized. The degree of the localization is governed completely by d.
