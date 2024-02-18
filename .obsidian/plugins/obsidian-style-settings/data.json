@@ -1,5 +1,6 @@
 {
   "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
   "blue-topaz-theme@@bt-status-on": false,
-  "blue-topaz-theme@@view-button-front": false
+  "blue-topaz-theme@@view-button-front": false,
+  "blue-topaz-theme@@file-line-width": 78
 }

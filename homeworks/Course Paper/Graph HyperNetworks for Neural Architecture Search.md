@@ -98,7 +98,7 @@ pizza -->|0.7| hotdog
 
 Furthermore, graphs can also be extremely useful where representing the hierarchical structure of a system is significant.
 
-In essence, neural networks are graphs. Even prior to the rise of neural networks, graphs have appeared in a more static forms: images. However, in a neural network, the architecture is very important. The inner layers of a neural network can actually be abstracted into a vector of hyperparameters which then can be tweak to influence the network's performance. This becomes even more apparent when one employs the ensemble method, which involves using mutliple learning methods concurrently and let them vote for the best results.
+In essence, neural networks are graphs. Even prior to the rise of neural networks, graphs have appeared in a more static forms: images. However, in a neural network, the architecture is very important. The inner layers of a neural network can actually be abstracted into a vector of hyper-parameters which then can be tweak to influence the network's performance. This becomes even more apparent when one employs the ensemble method, which involves using mutliple learning methods concurrently and let them vote for the best results.
 
 In this paper I am going to explore a form of graph isomorphism involved preserving the *topology* of a graph. I think this is a very interesting topic, the understanding of which can facilitate solving these high-dimensional problems.
 
